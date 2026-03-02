@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #d60000;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.brand {
+  font-size: 0.9rem;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 15px;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  border-left: 5px solid #d60000;
+  padding-left: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer {
+  background: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+}
+
+/*価格表示欄*/
+.price-section {
+  background: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.update-time {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.price-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.price-card {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 200px;
+}
+
+.price-card h3 {
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #d60000;
+}
+
+.price span {
+  font-size: 1rem;
+  margin-left: 5px;
+}
+
+.note {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+/*ここまで価格表示欄*/
+
+
+/* ===== スマホ用（画面幅768px以下） ===== */
+
+@media (max-width: 768px) {
+  
+  .price-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-text {
+    position: static;
+    background: none;
+    color: black;
+    padding: 10px;
+  }
+
+body {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+  section {
+    padding: 30px 15px;
+  }
+}
+
+.fixed-call {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #d60000;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (min-width: 769px) {
+  .fixed-call {
+    display: none;
+}
+}
+
+.hours-button {
+  margin-top: 30px;
+  text-align: left;
+}
+
+@media (max-width: 768px){
+    .hours-button{
+        display: none;
+    }
+    }
+
+
+.check-btn {
+  display: inline-block;
+  background: #d60000;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.check-btn:hover {
+  background: #a80000;
+}
